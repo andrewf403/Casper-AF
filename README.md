@@ -1,6 +1,8 @@
-# Casper
+# Casper - AF
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+My edits for default theme
+
+Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/).
 
 To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
 
