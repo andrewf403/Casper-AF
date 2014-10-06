@@ -176,9 +176,9 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Lora", serif;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.75em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
@@ -472,17 +472,28 @@ margin on the iframe, cause it breaks stuff. */
     vertical-align: bottom;
     width: 100%;
     padding: 0 0 120px 0;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* W3C */
+    background: -moz-linear-gradient(top,  rgba(30,30,30,0) 0%, rgba(30,30,30,0) 45%, rgba(30,30,30,1) 85%, rgba(30,30,30,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,30,30,0)), color-stop(45%,rgba(30,30,30,0)), color-stop(85%,rgba(30,30,30,1)), color-stop(100%,rgba(30,30,30,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,0) 45%,rgba(30,30,30,1) 85%,rgba(30,30,30,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,0) 45%,rgba(30,30,30,1) 85%,rgba(30,30,30,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,0) 45%,rgba(30,30,30,1) 85%,rgba(30,30,30,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(30,30,30,0) 0%,rgba(30,30,30,0) 45%,rgba(30,30,30,1) 85%,rgba(30,30,30,1) 100%); /* W3C */
 }
 
 .vertical-title h3 {
     /*color: #fff;*/
     padding-top: 18px;
+}
+
+.archive-template h3.links {
+    font-size: 12px;
+    padding: 2px 0 0 0;
+    /*display: none;*/
+}
+
+.tag-head .vertical-title, .archive-template .vertical-title {
+    padding: 0 0 20px 0;
+    /*background: rgba(30,30,30,0.45);*/
 }
 
 /* ==========================================================================
@@ -698,7 +709,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Lora", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -741,7 +752,8 @@ margin on the iframe, cause it breaks stuff. */
 .post {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    /*max-width: 710px;*/
+    max-width: 900px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
@@ -784,6 +796,9 @@ body:not(.post-template) .post-title {
 
 .read-more {
     text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 20px;
 }
 
 .post-meta {
@@ -1222,7 +1237,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "Lora", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }

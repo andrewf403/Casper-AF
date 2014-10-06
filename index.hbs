@@ -5,7 +5,7 @@
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">RSS</a>
     </nav>
     <div class="vertical-title">
         <div class="main-header-content inner">
@@ -13,30 +13,40 @@
             <h2 class="page-description">{{@blog.description}}</h2>
             <h3 class="links">
                 <span class="fa-stack fa-lg">
-                    <abbr title="CV"><a href="#1">
+                    <abbr title="CV"><a href="#">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
                     </a></abbr>
                 </span>
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+                    <abbr title="Блэкаут!"><a href="http://blackout.today/">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+                    </a></span>
                 </span>
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <abbr title="Facebook"><a href="https://www.facebook.com/andrew.fadeev">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </a></span>
                 </span>
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    <abbr title="Instagram"><a href="http://instagram.com/i_am_andrewf">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </a></span>
                 </span>
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    <abbr title="Twitter"><a href="https://twitter.com/andrewf">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </a></span>
                 </span>
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    <abbr title="Google+"><a href="https://plus.google.com/+AndrewFadeev/">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    </a></span>
                 </span>
             </h3>
         </div>
