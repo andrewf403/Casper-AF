@@ -480,6 +480,10 @@ margin on the iframe, cause it breaks stuff. */
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%); /* W3C */
 }
 
+.vertical-title h3 {
+    /*color: #fff;*/
+    padding-top: 18px;
+}
 
 /* ==========================================================================
    4. General - The main styles for the the theme
@@ -866,22 +870,55 @@ body:not(.post-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .post-header {
+.post-template .post-header .cover-post-header {
    margin-bottom: 3.4rem;
 }
 
-.post-template .post-title {
+.post-template .post-title .cover-post-title {
     margin-bottom: 0;
 }
 
-.post-template .post-meta {
+.post-template .post-meta .cover-post-meta {
     margin: 0;
 }
 
-.post-template .post-date {
+.post-template .post-date .cover-post-date {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+#covertitle {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    bottom: 0px;
+    min-height: 25%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 65%, rgba(0,0,0,0.95) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(65%,rgba(0,0,0,0.95)), color-stop(100%,rgba(0,0,0,0.95))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 65%,rgba(0,0,0,0.95) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 65%,rgba(0,0,0,0.95) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 65%,rgba(0,0,0,0.95) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 65%,rgba(0,0,0,0.95) 100%); /* W3C */
+}
+
+#covertitle h1, #covertitle .cover-post-meta {
+    color: #fff;
+    padding: 0 60px 0 60px;
+}
+
+#covertitle a, #covertitle .cover-post-meta, #covertitle .cover-post-date  {
+    color: #fff;
+}
+
+.no--cover.post-head.main-header {
+    height: 280px;
+    min-height: 0;
+   /* margin-bottom: 0;*/
+}
+
+.no--cover #covertitle {
+    min-height: 45%;
 }
 
 /* Stop .full-img from creating horizontal scroll - slight hack due to
@@ -1352,6 +1389,14 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 900px) {
 
+    h3.links {
+        font-size: 14px;
+    }
+
+    .vertical-title {
+        padding: 0 0 60px 0;
+    }
+
     .main-nav {
         padding: 15px;
     }
@@ -1450,7 +1495,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height:45%;
+        /*height:45%;*/
     }
 
     .tag-head.main-header,
@@ -1476,6 +1521,13 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    h3.links {
+        font-size: 14px;
+    }
+
+    .vertical-title {
+        padding: 0 0 20px 0;
+    }
     .main-header {
         margin-bottom: 15px;
         height: 40%;
@@ -1710,7 +1762,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height: 30%;
+      /*  height: 30%;*/
     }
 
     .tag-head.main-header,

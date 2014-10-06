@@ -6,23 +6,31 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no--cover{{/if}}">
+    <nav class="main-nav {{#if image}}{{/if}} overlay clearfix">
+        <a class="back-button icon-arrow-left" href="{{@blog.url}}">{{@blog.title}}</a>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">RSS</a>
     </nav>
+    <div id="covertitle">
+        <header class="cover-post-header">
+            <h1 class="cover-post-title">{{title}}</h1>
+            <section class="cover-post-meta">
+                <time class="cover-post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" // "}}
+            </section>
+        </header>
+    </div>
 </header>
 
 <main class="content" role="main">
 
     <article class="{{post_class}}">
 
-        <header class="post-header">
+        <!-- <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
             </section>
-        </header>
+        </header> -->
 
         <section class="post-content">
             {{content}}
