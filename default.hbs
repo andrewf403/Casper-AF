@@ -14,6 +14,21 @@
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
+    {{! Twitter Cards and Facebook OG }}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@andrewf">
+    <meta name="twitter:title" content="{{meta_title}}">
+    <meta name="twitter:description" content="{{meta_description}}. {{#post}}{{excerpt words="26"}}{{/post}}">
+    {{#if post.image}}<meta name="twitter:image:src" content="{{@blog.url}}{{post.image}}">
+    {{else}}<meta name="twitter:image:src" content="{{@blog.url}}{{@blog.cover}}">{{/if}}
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{meta_title}}">
+    <meta property="og:description" content="{{meta_description}}. {{#post}}{{excerpt words="26"}}{{/post}}">
+    {{#if post.image}}<meta property="og:image" content="{{@blog.url}}{{post.image}}">
+    {{else}}<meta property="og:image" content="{{@blog.url}}{{@blog.cover}}">{{/if}}
+
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
