@@ -21,3 +21,4 @@ projectFilesBackup
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+sftp-config.json

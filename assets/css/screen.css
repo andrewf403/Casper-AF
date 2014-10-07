@@ -496,6 +496,11 @@ margin on the iframe, cause it breaks stuff. */
     /*background: rgba(30,30,30,0.45);*/
 }
 
+h4.author-description {
+    font-style: italic;
+    padding-top: 14px;
+}
+
 /* ==========================================================================
    4. General - The main styles for the the theme
    ========================================================================== */
@@ -1128,7 +1133,7 @@ body:not(.post-template) .post-title {
 
 .post-head.main-header {
     height: 65%;
-    min-height: 180px;
+    min-height: 300px;
 }
 
 .no-cover.post-head.main-header {
@@ -1140,12 +1145,12 @@ body:not(.post-template) .post-title {
 
 .tag-head.main-header {
     height: 40%;
-    min-height: 180px;
+    min-height: 280px;
 }
 
 .author-head.main-header {
     height: 40%;
-    min-height: 180px;
+    min-height: 280px;
 }
 
 .no-cover.author-head.main-header {
@@ -1408,8 +1413,11 @@ body:not(.post-template) .post-title {
         font-size: 14px;
     }
 
+
+
     .vertical-title {
         padding: 0 0 60px 0;
+        background: rgba(30,30,30,.45);
     }
 
     .main-nav {
@@ -1538,6 +1546,20 @@ body:not(.post-template) .post-title {
 
     h3.links {
         font-size: 14px;
+    }
+
+    /*#covertitle {
+        background: rgba(0,0,0,.4);
+    }*/
+    
+    #covertitle h1, #covertitle .cover-post-meta {
+        color: #fff;
+        padding: 0 10px 5px 10px;
+    }
+
+    .cover-post-meta {
+        font-size: 12px;
+        line-height: 1em;
     }
 
     .vertical-title {
